@@ -7,11 +7,11 @@ const SearchBar = () => {
         <div className={styles.search}>
             <form>
                 <div className={styles.text}>
-                    <label>Destino</label>
+                    <label>Unidade</label>
                     <input 
                         className={styles.text_input}
                         type="text"
-                        placeholder="Local de partida"
+                        placeholder="Local de retirada"
                     />
                 </div>
                 <div className={styles.from}>
@@ -25,7 +25,7 @@ const SearchBar = () => {
                     <input type="date" />
                 </div>
                 <div className={styles.search_btn}>
-                    <button className={styles.btn}>Procure motoristas</button>
+                    <button className={styles.btn}>CONTINUAR</button>
                     <AiOutlineSearch size={25} className={styles.icon} />
                 </div>
             </form>

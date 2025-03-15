@@ -18,7 +18,7 @@ const Navbar = () => {
                         <a href="/">Login</a>
                     </li>
                     <li>
-                        <a href="/">Inscreva-se</a>
+                        <a href="/">Cadastrar</a>
                     </li>
                     <li>
                         <AiOutlineSearch size={25} style={{marginTop: "6px"}} />

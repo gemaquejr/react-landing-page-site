@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./Navbar.module.css"
 import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import Logo from "../../assets/logo.png"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -12,13 +13,13 @@ const Navbar = () => {
             <nav>
                 <ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
                     <li>
-                        <a href="/">Saiba Mais</a>
+                        <Link to="/about">Saiba Mais</Link>
                     </li>
                     <li>
-                        <a href="/">Login</a>
+                        <Link to="/login">Login</Link>
                     </li>
                     <li>
-                        <a href="/">Cadastrar</a>
+                        <Link to="/register">Cadastrar</Link>
                     </li>
                     <li>
                         <AiOutlineSearch size={25} style={{marginTop: "6px"}} />

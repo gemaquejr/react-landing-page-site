@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import SearchBar from "./components/searchBar/Search";
-import Find from "./components/find/Find";
-import Driver from "./components/driver/Driver";
-import Luxury from "./components/luxury/Luxury";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 
 function App() {
   return (
-    <div>
-      < Navbar />
-      < SearchBar />
-      < Find />
-      < Driver />
-      < Luxury />
-      < Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
